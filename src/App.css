@@ -1,0 +1,126 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(120deg, #f6f9fc, #e9eff5);
+  color: #333;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header Styles */
+.app-header {
+  background: #B2BEB5;
+  color: white;
+  padding: 0;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1s ease-out;
+  /* border-bottom: 5px solid #184a8d; */
+}
+
+.app-title {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  margin: 0;
+}
+
+/* Main Section Styles */
+.app-main {
+  flex-grow: 1;
+  padding: 30px;
+  max-width: 1200px;
+  margin: 40px auto;
+  /* background: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Navigation Styles */
+.app-nav {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px 25px;
+  /* background: #2a5298; 
+  border-radius: 25px;*/
+  transition: all 0.3s ease-in-out;
+  /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); */
+}
+
+.nav-link:hover {
+  background-color: #9a875f;
+  border-radius: 10px;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.nav-link.active {
+  font-weight: 700;
+  background-color: #9a875f;
+  border-radius: 10px;
+}
+.inner-img{
+  width: 25%;
+  float: left;
+  margin-right: 15px;
+}
+.inner-img img{
+  max-width: 100%;
+}
+.inner-cont{
+  width: 100%;
+}
+
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .app-title {
+    font-size: 2.4rem;
+  }
+
+  .app-main {
+    padding: 20px;
+  }
+
+  .app-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-link {
+    width: 80%;
+    text-align: center;
+  }
+}

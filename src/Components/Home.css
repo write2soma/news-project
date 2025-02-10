@@ -1,0 +1,164 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family: 'Arial', sans-serif;
+    background: #f0f4f8;
+    color: #333;
+}
+
+.home-container{
+    /* display: flex; */
+    flex-direction: column;
+    min-height: 100vh;
+    /* background: #f0f4f8; */
+}
+
+.header{
+    background:#B2BEB5;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+logo{
+    max-width: 100px;
+    max-height: 50px;
+    margin: 0 auto;
+}
+
+.news-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    width:75%;
+    float:left;
+}
+.news-card{
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease; 
+}
+.news-card:hover{
+    transform: translateY(-10px);
+}
+
+.news-image{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #f1f1f1;
+}
+
+.news-content{
+    padding: 15px;
+}
+
+.news-title{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color : #333;
+}
+.news-excerpt{
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+.read-more-btn{
+    color: #9a875f;
+    font-weight: 700;
+    text-decoration: none;
+   
+}
+.read-more-btn:hover{
+    color: #9a875f;
+    text-decoration: underline;
+   
+}
+
+.sidebarmain{
+    width:25%;
+    float: left;
+    margin: 15px 0;
+  
+}
+.sidebar {
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .sidebar h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin: 0.5rem 0;
+  }
+  
+  .sidebar a {
+    text-decoration: none;
+    color: #9a875f;
+  }
+  
+  .sidebar a:hover {
+    text-decoration: underline;
+  }
+  
+
+.footer{
+    background: #B2BEB5;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+.articledetail ul{
+    list-style: none;
+    padding-top: 10px;
+}
+
+.articledetail ul li{
+    list-style:circle;
+}
+
+.articledetail a {
+    text-decoration: none;
+    color: #9a875f;
+  }
+  
+  .articledetail a:hover {
+    text-decoration: underline;
+  }
+
+.footer-content p{
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px){
+   .logo{
+         font-size: 2rem;     
+   }
+   .news-grid{
+    padding: 10px;
+   }
+   .news-title{
+       font-size: 1.2rem;
+   }
+   .read-more-btn{
+         padding: 8px 12px;
+   }
+}
