@@ -15,7 +15,7 @@ const App = () => {
       <div className="app-container">
         <header className="app-header">
           <div className="Logo">
-            <img src="../assets/images/Logo.png" alt="Logo" />
+            <img src="https://soma.rkmvivekatirtha.org/wp-content/uploads/2025/02/Logo.png" alt="Logo" />
           </div>
           <nav className="app-nav">
             <NavLink to="/" className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")} end>
